@@ -1,3 +1,4 @@
+/* string */
 let stringEx = '안녕하세요(1)';
 stringEx = "안녕하세요(2)";
 stringEx = `안녕하세요(3)`;
@@ -8,7 +9,7 @@ stringEx = '`안녕하세요(5)`';
 stringEx = "'안녕하세요(6)'";
 stringEx = "`안녕하세요(7)`";
 
-stringEx = `'안녕하세요(8)'`;
+stringEx = `'안녕하세요(8)'`; // Template Literal
 stringEx = `"안녕하세요(9)"`;
 
 let temp = `stringEx : ${stringEx}`;
