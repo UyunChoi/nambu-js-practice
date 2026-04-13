@@ -1,0 +1,39 @@
+<!-- 영화 목록을 콘솔에서 확인 → 브라우저에 띄우기 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ur class="list"></ur>
+    <script>
+        const url = 'http://raw.githubusercontent.com/wapj/jsbackend/main/movieinfo.json';
+        const list = document.querySelector('.list');
+
+        /* 복붙 */
+        const movieList = [];
+        fetch(url)
+            .then ((res) => res.json())
+            .catch (() => new Error('요청에 실패했습니다.'))
+            .then ((data) => {
+                if(!data) {
+
+                }
+            })
+
+
+        const movieInfo = document.createElement('li');
+        
+        for(let resulte of movieList){
+            li.textContent = resulte;
+            list.appendChild(li);
+        }
+        
+    </script>
+    <!-- 백엔드 서버와 통신하는 예제 -->
+    <!-- 카드 만들어서 화면 출력하기 -->
+</body>
+</html>

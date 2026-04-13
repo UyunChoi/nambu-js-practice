@@ -1,3 +1,5 @@
+<!-- 요소 조작 및 이벤트 -->
+
 <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -11,7 +13,8 @@
         <script>
             const title = document.querySelector('#title');
             const btn = document.querySelector('.btn');
-            //(add)이벤트리스너
+            // (add)EventListener 
+            // add -> 여러개를 지정할 수 있다.
             btn.addEventListener('click', () => {
                 //변경
                 title.textContent = 'querySelector 성공';

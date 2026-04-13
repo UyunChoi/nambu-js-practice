@@ -1,0 +1,40 @@
+<!-- 클래스 조작 -->
+
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+       <div class="box">클릭</div>
+       
+       <!-- <style>태그 //. -->
+       <style>
+        .active {
+            background: yellow;
+        }
+       </style>
+
+       <script>
+            const box = document.querySelector('.box');
+            box.addEventListener('click', () => {
+                box.classList.toggle('active'); 
+                
+                /* classList
+                HTML 요소의 클래스(class)를 아주 쉽게 관리할 수 있게 도와주는 도구
+                    add() : 클래스 추가
+                    remove() : 클래스 삭제
+                    toggle() : 껐다 켜기 (스위치)
+                    contains() : 있는지 확인
+                 */
+
+                // .box를 클릭할 때마다 'active'라는 상태를 껐다 켰다(Toggle) 
+            });
+            
+            /* 버튼 클릭 했을 때 색 변경해보기 */
+
+       </script> 
+    </body>
+</html>
