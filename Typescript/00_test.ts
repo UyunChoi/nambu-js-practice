@@ -1,3 +1,5 @@
+/* express / typescript / ts-node 설치*/
+
 function sayHello(name:string):string{
 	return `Hello ${name}`;
 }
