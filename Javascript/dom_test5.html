@@ -8,16 +8,24 @@
     <title>Document</title>
  </head>
  <body>
+    <input class="input" placeholder="입력"/>
     <ul class="list"></ul>
     <button class="add">추가</button>
+    
+    
     <script>
         const list = document.querySelector('.list');
         const btn = document.querySelector('.add');
+        const input = document.querySelector('.input');
 
         btn.addEventListener('click', () => {
             const li = document.createElement('li');
-            li.textContent = '새 항목';
             list.appendChild(li);
+            li.textContent = '새 항목';
+
+            // li.textContent = '새 항목';
+            // list.appendChild(li);
+            
         });
     </script>
  </body>

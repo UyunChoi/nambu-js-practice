@@ -1,0 +1,34 @@
+.photo {
+  width: 150x;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position:top;
+  border: 4px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.24);
+}
+
+.nick {
+  padding: 0;
+  margin: 1rem; /* 브라우저 기본? 16px -> rem : root 크기 기준 */
+}
+
+.team {
+  padding: 0;
+  margin: 0.5;
+  color: blueviolet;
+  font-weight: bold;
+
+}
+.member-card {
+  margin: 0;
+  padding: 0.5rem;
+  width: 10rem;     /* 상대적 크기를 쓰는 이유 -> 하나만 변경하면 되니까*/
+  min-height: 15rem;
+  text-align: center;
+
+
+  background-color: #ebebeb; /* 헥사 Rgb */
+  border-radius: 1rem;
+  box-shadow: 0.25rem 0.5rem 0.5rem rgba(0, 0, 0, 0.24); /* 만들어 주는 사이트가 많다? */
+}

@@ -1,6 +1,6 @@
 <!-- 입력처리 -->
 
- <!DOCTYPE html>
+<!DOCTYPE html>
  <html lang="en">
  <head>
     <meta charset="UTF-8">
@@ -9,13 +9,30 @@
  </head>
  <body>
     <input class="input" placeholder="입력"/>
-    <button class="add">입력</button>
-    <ur class="list">목록</ur>
+    <ul class="list"></ul>
+    <button class="add">추가</button>
+    
     
     <script>
-        const input = document.querySelector('.input');
+        const list = document.querySelector('.list');
         const btn = document.querySelector('.add');
-        //const list = document.que
+        const input = document.querySelector('.input');
+
+        btn.addEventListener('click', () => {
+            const li = document.createElement('li');
+            
+            list.appendChild(li);
+            li.textContent = input.value;  // li.textContent = '새 항목';
+            input.value = '';              // input.value = '새 항목';
+            
+            //li.textContent = input.value;  // li.textContent = '새 항목';
+            //list.appendChild(li);
+            //input.value = '';              // input.value = '새 항목';
+            
+            // list.appendChild(li);
+            // li.textContent = input.value;
+            // input.value = '새 항목';
+        });
     </script>
  </body>
  </html>

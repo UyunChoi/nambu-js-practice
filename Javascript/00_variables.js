@@ -40,6 +40,7 @@ console.log(`나이는 ${age}살이고 학년은 ${grade} 학년이다.`);
 
 
 /* 변수, 상수 작명규칙 */
+    // 컨벤션
 /* 문장 Statement */
 const age = 20;
 console.log(age);

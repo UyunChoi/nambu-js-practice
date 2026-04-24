@@ -1,4 +1,4 @@
-/* Control statements */
+/* Control Flow */
 /* Conditional statements */
 
 /* if */

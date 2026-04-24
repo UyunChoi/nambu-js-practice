@@ -1,0 +1,32 @@
+/* 전체 페이지 설정 */
+.libraryPage {
+  background-color: darksalmon;
+  padding: 2rem;
+  min-height: 100vh; /* 화면 전체 높이 차지 */
+}
+
+/* 카드들을 가로로 나열하기 위한 컨테이너 */
+.bookList {
+  display: flex;
+  flex-wrap: wrap; /* 자리가 부족하면 다음 줄로 */
+  gap: 1.5rem;      /* 카드 사이 간격 */
+  justify-content: center; /* 가운데 정렬 */
+}
+
+/* 개별 책 카드 */
+.bookCard {
+  background-color: coral;
+  padding: 1rem;
+  border-radius: 8px; /* 모서리 둥글게 */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* 살짝 입체감 */
+  text-align: center;
+  width: fit-content; /* 내용물 크기에 맞춤 */
+}
+
+/* 이미지 크기 고정 */
+.bookImage {
+  width: 10rem;
+  height: 15rem;
+  object-fit: cover; /* 이미지 비율 유지하며 채우기 */
+  border-radius: 4px;
+}
