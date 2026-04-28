@@ -1,0 +1,74 @@
+body {
+  background-color: #eee;
+  padding: 30px;
+}
+
+
+/* block */
+.block {
+  /* display: block; */
+  background-color: #8fb6c1;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+
+/* inline */
+.inline-wrap {
+  margin-bottom: 1.2rem;
+  background-color: #8fb6c1;
+}
+.inline {
+  display: inline;
+  background-color: #8fdc8f;
+  padding: 1rem;
+}
+
+
+/* inline-block */
+.inline-block-wrap {
+  margin-bottom: 1.2rem;
+  background-color: #8fb6c1;
+}
+
+.inline-block {
+  display: inline-block;
+  background-color:  #e57373;
+  padding : 1rem;
+  width: 15rem;
+  height: 5rem;
+}
+
+
+/* flex */
+.flex-container {
+  display: flex;
+  background-color: #8fb6c1; /* #e8e2c5; */
+  padding : 0.5rem;
+  margin-bottom: 1rem;
+  
+  gap: 1rem;
+}
+
+.flex-item {
+  background-color: #e8e2c5;/* orange; */
+  padding : 1rem;
+  flex : 1; /* 남는 공간을 어떻게 할 것인가? */
+}
+
+
+/* grid */
+.grid-container {
+  display: grid;
+  background-color: #8fb6c1;
+  grid-template-columns: 1fr 2fr 3fr 4fr; /* 1fr 1fr;*/
+  padding: 1rem;
+
+  gap: 1rem;
+} 
+
+.grid-item {
+  background-color: #7e6cc4;
+  color: black;
+  padding: 2rem;
+} 

@@ -50,7 +50,7 @@ function App(){
 }
  */
 
-
+/* 
 function App() {
   return(
     <>
@@ -62,6 +62,29 @@ function App() {
     </>
   )
 }
+ */
 
+type Props = {type: 'date'| 'time' | 'all'}
+const current = (t: Props['type']) => {
+  const d = new Date();
+  switch(t) {
+    case 'date' :
+      console.log(d.toLocaleDateString());
+      break;
+    case 'time' :
+      console.log(d.toLocaleTimeString());
+      break;
+    default :
+      console.log(d.toString());
+  }
+}
+
+
+
+function App() {
+  return (<>
+
+  </>);
+}
 
 export default App;
