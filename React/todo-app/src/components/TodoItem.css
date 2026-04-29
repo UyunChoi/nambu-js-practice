@@ -1,0 +1,31 @@
+.TodoItem {
+  display: flex;
+  align-items: center;
+
+  gap:1rem;
+
+  padding: 1rem 0rem;
+  border-bottom: 0.05rem solid rgb(220, 220, 220); /* border는 px로 */
+}
+
+.TodoItem .checkbox_col {
+  width: 1rem;
+}
+
+.TodoItem .title_col {
+  flex:1;
+}
+
+.TodoItem .date_col{
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.TodoItem .btn_col button{
+  color: gray;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
