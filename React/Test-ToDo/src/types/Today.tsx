@@ -1,3 +1,9 @@
+
+
+
+
+
+/* 
 import { useState } from "react";
 import Header from "../component/Header";
 
@@ -6,15 +12,15 @@ interface TodayData {
   time : number;
   all : Date;
 }
-/* 
+
 const TodayData = ({date, time, all}: TodayDataProps) => {
   const now = new Date();
   date = now.toLocaleDateString();
   time = now.toLocaleTimeString();
   all = now.toStriﬁng();
 }
- */
-/* export {TodayData}; */
+
+export {TodayData}; 
 
 const UpdateTodayData = () => {
   const init = {
@@ -39,3 +45,4 @@ const UpdateTodayData = () => {
 
 export type {TodayData};
 export {UpdateTodayData};
+*/
