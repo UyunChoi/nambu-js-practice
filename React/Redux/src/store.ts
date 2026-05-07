@@ -1,13 +1,14 @@
-import { createSlice, configureStore } from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
 
-const slice = createSlice({
-  name : 'counter',
-  initialState : {value:0},
-  reducers : {
-    increase : (state) => {state.value += 1},
-    descrease : (state) => {state.value -= 1}
+import counterReducer from "./counterReducer";
+import userReducer from "./userReducer";
+
+const store = configureStore({
+  reducer : {
+    counter : counterReducer,
+    user : userReducer
   }
 });
 
-export const {increase, descrease} =slice.actions;
-export const store = configureStore({reducer:slice.reducer});
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
