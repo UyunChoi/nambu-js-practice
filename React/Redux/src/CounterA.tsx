@@ -1,7 +1,7 @@
 // state 변경
 // UseDispatch -> store에 있는
 import { useDispatch} from "react-redux";
-import { increase } from "./actions";
+import { increase } from "./store";
 const CounterA = () => {
   const dispatch = useDispatch();
   return(

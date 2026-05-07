@@ -1,12 +1,12 @@
 // state 변경
 // UseDispatch -> store에 있는
 import { useDispatch} from "react-redux";
-import { descrease } from "./actions";
+import { descrease } from "./store";
 const CounterB = () => {
   const dispatch = useDispatch();
   return(
     <div>
-      <button onClick={()=>dispatch(descrease())}> <h1>+</h1></button>
+      <button onClick={()=>dispatch(descrease())}> <h1>-</h1></button>
     </div>
   );
 };

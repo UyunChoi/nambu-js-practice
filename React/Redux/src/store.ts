@@ -1,6 +1,13 @@
-import reducer
-import { createStore } from "redux"
+import { createSlice, configureStore } from "@reduxjs/toolkit";
 
-export const store = create(reducer);
+const slice = createSlice({
+  name : 'counter',
+  initialState : {value:0},
+  reducers : {
+    increase : (state) => {state.value += 1},
+    descrease : (state) => {state.value -= 1}
+  }
+});
 
-//컴포넌트에서 여기에 있는 것들을 불러 씀
+export const {increase, descrease} =slice.actions;
+export const store = configureStore({reducer:slice.reducer});
